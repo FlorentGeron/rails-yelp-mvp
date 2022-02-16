@@ -1,0 +1,18 @@
+<div class="container">
+<h1>welcome to YELP</h1>
+<ul>
+  <% @restaurants.each do |restau| %>
+  <li>
+    <%= link_to restaurant_path(restau)  do%>
+      <div class="card">
+        <%= restau.name %> - <%= restau.address %> - <%= restau.category %>
+      </div>
+    <% end %>
+  </li>
+  <%end%>
+</ul>
+
+<%= link_to new_restaurant_path do  %>
+<div class="btn btn-primary">New Restaurant</div>
+<%end%>
+</div>

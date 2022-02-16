@@ -1,0 +1,23 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+ul {
+  list-style:none;
+}
+
+.card>a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+}

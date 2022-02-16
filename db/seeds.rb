@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+dragon = Restaurant.new(name: "Le dragon qui fume", address: "Oberkampf", category: "chinese")
+bouffe = Restaurant.new(name: "La bonne bouffe", address: "Montparnasse", category: "french")
+frite = Restaurant.new(name: "La frite qui sent", address: "Saint-Michel", category: "belgian")
+escrocs = Restaurant.new(name: "Plumons les hipsters", address: "Marcadet", category: "french")
+chelou = Restaurant.new(name: "Tu veux pas savoir", address: "Belleville", category: "chinese")
+dragon.save
+bouffe.save
+frite.save
+escrocs.save
+chelou.save
+puts "done seeding, bro"
